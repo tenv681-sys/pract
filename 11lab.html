@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .body {
+        font-family: Arial, sans-serif;
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .inbox {
+        width: 380px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 15px;
+    }
+
+    .inbox h3 {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+    }
+
+    .email:last-child {
+        border-bottom: none;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .text {
+        display: block;
+    }
+
+    .text .title {
+        font-weight: bold;
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 3px;
+    }
+
+    .text .message {
+        font-size: 13px;
+        color: #666;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+    }
+
+    .time {
+        font-size: 12px;
+        color: #999;
+        white-space: nowrap;
+        margin-left: 10px;
+    }
+
+    .tweet {
+        display: flex;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .tweet-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tweet-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .tweet-header .name {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .tweet-header .handle {
+        color: #777;
+        font-size: 14px;
+    }
+
+    .tweet-text {
+        font-size: 15px;
+        color: #222;
+        line-height: 1.4;
+    }
+
+    .tweet-link {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .link-thumb {
+        width: 100px;
+        height: 80px;
+        background-color: #d8d8d8;
+        flex-shrink: 0;
+    }
+
+    .link-info {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .link-info .domain {
+        font-size: 13px;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .link-info .title {
+        font-size: 14px;
+        color: #000;
+    }
+</style>
+</head>
+<body>
+    <div style="display: flex; margin-bottom: 15px;">
+        <div style="width: 100px; height: 50px; background: #f8bbd0;">
+            <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+                <span style="background: #000000; color: #fff">item1</span>
+            </div>
+        </div>
+        <div style="width: 200px; height: 50px; background: #b2ebf2;"></div>
+    </div>
+
+    <div style="display: flex; margin-bottom: 15px;">
+        <div style="width: 100px; height: 50px; background: #f8bbd0;"></div>
+        <div style="width: 200px; height: 50px; background: #b2ebf2;">
+            <span style="color: #000000;">row1</span>
+            <br>
+            <div style="display: flex; justify-content: space-between;">
+                <span style="background: #000000; color: #fff;">row2</span>
+                <span style="background: #000000; color: #fff;">row2</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="inbox">
+    <h3>ALL INBOXES</h3>
+
+    <div class="email">
+        <div class="left">
+            <img class="avatar" src="https://avatars.mds.yandex.net/i?id=a6f31542fd426aab4fd381112fb0b82261fb6963-16414938-images-thumbs&n=13" alt="Chewy">
+            <div class="text">
+                <div class="title">Chewy Promotions</div>
+                <div class="message">Biggest sales of the year! Hey there! We're writing to tell you...</div>
+            </div>
+        </div>
+        <div class="time">7:40 PM</div>
+    </div>
+
+    <div class="email">
+        <div class="left">
+            <img class="avatar" src="https://avatars.mds.yandex.net/i?id=3bdf0ea71745f84368a1050f5f79f3ca_l-4251039-images-thumbs&n=13" alt="Best Buy">
+            <div class="text">
+                <div class="title">Best Buy</div>
+                <div class="message">Your Best Buy eReceipt. Thank you for shopping...</div>
+            </div>
+        </div>
+        <div class="time">9:13 PM</div>
+    </div>
+
+    <div class="email">
+        <div class="left">
+            <img class="avatar" src="https://avatars.mds.yandex.net/i?id=9f1fbbeefde196d6ee995bc40650a566031995e4-8567811-images-thumbs&n=13" alt="Netflix">
+            <div class="text">
+                <div class="title">Netflix</div>
+                <div class="message">Here’s what’s coming soon to Netflix...</div>
+            </div>
+        </div>
+        <div class="time">6:00 AM</div>
+    </div>
+
+    <div class="tweet">
+        <img class="avatar" src="https://avatars.mds.yandex.net/i?id=9f1fbbeefde196d6ee995bc40650a566031995e4-8567811-images-thumbs&n=13" alt="User">
+
+        <div class="tweet-content">
+            <div class="tweet-header">
+                <div class="name">supersimple.dev</div>
+                <div class="handle">@SuperSimpleDev</div>
+            </div>
+
+            <div class="tweet-text">
+            What is backend web development? A complete overview. New video is up!
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=XBu54nfzxAQ" class="tweet-link">
+            <div class="link-thumb"></div>
+            <div class="link-info">
+                <div class="domain">youtube.com</div>
+                <div class="title">Backend web development – a complete overview (2021)</div>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
