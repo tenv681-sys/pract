@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+header {
+    display: flex;
+    padding: 1rem;
+    font-family: Science Gothic;
+}
+header .menu {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.photos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+.photos img {
+    width: 100%;
+    height: 100%;
+}
+#container {
+    font-family: Science Gothic;
+}
